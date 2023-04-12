@@ -15,15 +15,20 @@ function showPosition(position) {
     // x.innerHTML="Latitude: " + position.coords.latitude + 
     // "<br>Longitude: " + position.coords.longitude;
     x.innerHTML = position.coords.latitude;
+    var lat = x.innerHTML;
     y.innerHTML = position.coords.longitude;
+    var long = y.innerHTML;
+  
+    console.log("x = "+ x.innerHTML + " y = " + y.innerHTML);
     sendMail(x.innerHTML, y.innerHTML);
+
 }
 
-function sendMail() {
+function sendMail(lat, long) {
   var link = "mailto:me20b2011@iiitdm.ac.in"
            + "?cc=myCCaddress@example.com"
            + "&subject=" + encodeURIComponent("This is my subject")
-           + "&body=" + encodeURIComponent("This is body");
+           + "&body=" + encodeURIComponent("lat, long");
   ;
   
   window.location.href = link;
