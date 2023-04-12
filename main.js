@@ -22,7 +22,7 @@ function showPosition(position) {
     y.innerHTML = position.coords.longitude;
     long = y.innerHTML;
   
-    console.log("x = "+ x.innerHTML + " y = " + y.innerHTML);
+    console.log("latitude = "+ lat + " longitude = " + long);
 
 }
 
@@ -30,7 +30,7 @@ function sendMail(lat, long) {
   var link = "mailto:me20b2011@iiitdm.ac.in"
            + "?cc=myCCaddress@example.com"
            + "&subject=" + encodeURIComponent("This is my subject")
-           + "&body=" + encodeURIComponent("lat, long");
+           + "&body=" + encodeURIComponent("lat = " + lat + " long = " + long);
   ;
   
   window.location.href = link;
