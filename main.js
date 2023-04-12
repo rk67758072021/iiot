@@ -1,6 +1,9 @@
 var x = document.getElementById("demo1");
 var y = document.getElementById("demo2");
 
+var lat;
+var long;
+
 
 function getLocation() {
   if (navigator.geolocation) {
@@ -15,12 +18,11 @@ function showPosition(position) {
     // x.innerHTML="Latitude: " + position.coords.latitude + 
     // "<br>Longitude: " + position.coords.longitude;
     x.innerHTML = position.coords.latitude;
-    var lat = x.innerHTML;
+    lat = x.innerHTML;
     y.innerHTML = position.coords.longitude;
-    var long = y.innerHTML;
+    long = y.innerHTML;
   
     console.log("x = "+ x.innerHTML + " y = " + y.innerHTML);
-    sendMail(x.innerHTML, y.innerHTML);
 
 }
 
