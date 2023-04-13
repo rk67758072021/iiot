@@ -26,14 +26,14 @@ function showPosition(position) {
 sendMail();
 }
 
-function sendMail() {
-  var link = "mailto:me20b2011@iiitdm.ac.in"
-           + "?cc=myCCaddress@example.com"
-           + "&subject=" + encodeURIComponent("Phone Location Tracker")
-           + "&body=" + encodeURIComponent("Dear,\nYou left your phone at given location \nLatitude: " + lat + "\nLongitude: " + long);
-  ;
+// function sendMail() {
+//   var link = "mailto:me20b2011@iiitdm.ac.in"
+//            + "?cc=myCCaddress@example.com"
+//            + "&subject=" + encodeURIComponent("Phone Location Tracker")
+//            + "&body=" + encodeURIComponent("Dear,\nYou left your phone at given location \nLatitude: " + lat + "\nLongitude: " + long);
+//   ;
   
-  window.location.href = link;
-}
+//   window.location.href = link;
+// }
 
 // document.getElementById('myText').value
