@@ -28,11 +28,12 @@ sendMail();
 
 function sendMail() {
   var link = "mailto:me20b2011@iiitdm.ac.in"
-           + "&subject=" + encodeURIComponent("Your phone location")
-           + "&body=" + encodeURIComponent("body");
+           + "?cc=myCCaddress@example.com"
+           + "&subject=" + encodeURIComponent("Phone Location Tracker")
+           + "&body=" + encodeURIComponent("Hey You left your phone at given location \nLatitude: " + lat + "\nLongitude: " + long);
   ;
   
   window.location.href = link;
 }
 
-// "?cc=myCCaddress@example.com"
+// document.getElementById('myText').value
