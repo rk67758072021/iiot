@@ -23,7 +23,7 @@ function showPosition(position) {
     long = y.innerHTML;
   
     console.log("latitude = "+ lat + " longitude = " + long);
-
+sendMail();
 }
 
 function sendMail() {
