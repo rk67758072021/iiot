@@ -30,7 +30,7 @@ function sendMail() {
   var link = "mailto:me20b2011@iiitdm.ac.in"
            + "?cc=myCCaddress@example.com"
            + "&subject=" + encodeURIComponent("Your phone location")
-           + "&body=" + encodeURIComponent("latitude = " + lat + " longitude = " + longitude);
+           + "&body=" + encodeURIComponent("body");
   ;
   
   window.location.href = link;
