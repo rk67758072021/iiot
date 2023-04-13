@@ -1,7 +1,7 @@
 html,
 body {
-  margin: 10px;
-  padding: 10px;
+  padding: 0;
+  margin: 0;
 }
 
 * {
@@ -10,14 +10,22 @@ body {
 
 .body {
   background-image: url("./images/images-2.jpeg");
-  height: 600px;
+  height: 705px;
   position: relative;
-  margin-top: 20px;
+  margin-top: 1px;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: contain;
   min-height: 380px;
+  /* image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges;          Firefox */
+  /* image-rendering: -o-crisp-edges;            /* Opera */
+  /* image-rendering: -webkit-optimize-contrast; Webkit (non-standard naming) */
 }
+
+/* .body {
+  background: linear-gradient(#e66465,#9198e5);
+} */
 
 .container {
   background-color: #fff;
@@ -65,4 +73,88 @@ h2 {
 
 textarea {
   resize: none;
+}
+
+.navbar {
+  height: 50px;
+  background-color: #333;
+}
+
+/* ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  
+  position: -webkit-sticky; 
+  position: sticky;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+} */
+
+/* .active {
+  position: absolute;
+  left: 10px;
+}
+
+.left {
+  position: absolute;
+  right: 30px;
+} */
+
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+  
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
 }
