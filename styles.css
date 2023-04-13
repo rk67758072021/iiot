@@ -28,6 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: left;
+  padding: 2%;
 }
 
 .btn {
@@ -60,4 +61,8 @@ h2 {
 
 #hidden {
   display: none;
+}
+
+textarea {
+  resize: none;
 }

@@ -30,7 +30,7 @@ function sendMail() {
   var link = "mailto:me20b2011@iiitdm.ac.in"
            + "?cc=myCCaddress@example.com"
            + "&subject=" + encodeURIComponent("Phone Location Tracker")
-           + "&body=" + encodeURIComponent("Hey You left your phone at given location \nLatitude: " + lat + "\nLongitude: " + long);
+           + "&body=" + encodeURIComponent("Dear,\nYou left your phone at given location \nLatitude: " + lat + "\nLongitude: " + long);
   ;
   
   window.location.href = link;
